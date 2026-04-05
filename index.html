@@ -66,7 +66,12 @@ nav{position:fixed;width:100%;top:0;background:rgba(0,0,0,0.6);backdrop-filter:b
 .menu a{margin:0 12px;color:#fff;text-decoration:none;font-size:14px}
 .menu a:hover{color:var(--accent)}
 
-.hero{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:80px;align-items:center}
+.hero{display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:40px;
+  margin-top:0;
+  padding-top:80px; /* biar tidak ketutup navbar */
+  align-items:center;}
 .hero h1{font-size:44px;line-height:1.2}
 .hero img{width:100%;border-radius:20px}
 
@@ -208,32 +213,30 @@ nav{position:fixed;width:100%;top:0;background:rgba(0,0,0,0.6);backdrop-filter:b
 <nav>
 <div class="wrap nav-inner">
 <div style="display:flex;align-items:center;gap:10px;">
-<img src="img/logo.png" style="height:35px;">
-<b>BimbelPro</b>
+<img src="img/logo.png" style="height:50px;">
 </div>
 <div class="menu">
 <a href="#home">Home</a>
 <a href="#program">Program</a>
 <a href="#galeri">Galeri Kegiatan</a>
-<a href="#harga">Harga</a>
 </div>
 </div>
 </nav>
 
 <section class="section wrap hero" id="home">
 <div>
-<h1>SMART FOR YOU</h1>
-<p>Mengajar tanpa menggurui</p>
+  <img src="img/yyy.jpg" alt="">
 <a href="https://wa.me/6281234567890?text=Halo%20saya%20mau%20daftar" class="btn">Daftar Sekarang</a>
 </div>
 <img src="img/baru.jpeg">
+<img src="img/awal.jpg">
 </section>
 
 <section class="section wrap" id="program">
 <h2>Program</h2>
 <div class="grid">
-<div class="card"><img src="img/sd.jpeg"><h3>SD</h3></div>
-<div class="card"><img src="img/smp.jpeg"><h3>SMP</h3></div>
+<div class="card"><img src="img/sd.jpeg"><h3>SD<br>Kelas 1-6</h3></div>
+<div class="card"><img src="img/smp.jpeg"><h3>SMP<br>Kelas 7-9</h3></div>
 </div>
 </section>
 
@@ -245,7 +248,6 @@ nav{position:fixed;width:100%;top:0;background:rgba(0,0,0,0.6);backdrop-filter:b
 
 <div class="grid">
 <img src="img/1.jpg">
-<img src="img/2.jpg">
 <img src="img/3.jpeg">
 <img src="img/4.jpeg">
 <img src="img/5.jpeg">
@@ -262,18 +264,13 @@ nav{position:fixed;width:100%;top:0;background:rgba(0,0,0,0.6);backdrop-filter:b
 
 </section>
 
-<section class="section wrap" id="harga">
-<h2>Paket Harga</h2>
-<div class="grid">
-<div class="card"><h3>Per minggu</h3><p>Rp 50K</p></div>
-<div class="card"><h3>Per bulan</h3><p>Rp 100K</p></div>
-</div>
-</section>
+
 
 <section class="section" id="tentang">
 <div class="wrap footer-grid">
 
 <div>
+<h3>SMART FOR YOU HQ</h3>
 <p>Perumahan Kirana Cibitung<br>Blok M4 No13 Rt09 Rw024<br>Cibitung Bekasi Jawa Barat</p>
 <div class="sosmed">
 <a href="https://www.facebook.com/share/1HuBGFFeAb/"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" width="18"></a>
@@ -283,13 +280,24 @@ nav{position:fixed;width:100%;top:0;background:rgba(0,0,0,0.6);backdrop-filter:b
 
 <div>
 <h3>Program</h3>
-<p>Kedinasan<br>SNBT dan Ujian Mandiri</p>
+<p>Les Mata Pelajaran<br>SD kelas 1-6</p>
+<p>Les Mata Pelajaran<br>SMP kelas 7-9</p>
 </div>
 
 <div>
 <h3>Quotes</h3>
-<p>"jika kamu tidak sanggup menahan lelahnya belajar, maka kamu harus sanggup menahan perihnya kebodohan<br>(Imam Syafi'i)"</p>
-<a href="https://wa.me/6285117357004" class="btn">Hubungi Kami</a>
+
+<div style="display:flex; gap:20px; flex-wrap:wrap; align-items:flex-start;">
+
+  <div>
+  <p>"jika kamu tidak sanggup menahan lelahnya belajar, maka kamu harus sanggup menahan perihnya kebodohan<br>(Imam Syafi'i)"</p>
+</div>
+
+<div style="margin-top:20px;">
+  <h3>Info Lebih Lanjut</h3>
+  <a href="https://wa.me/6285117357004" class="btn">Hubungi Kami</a>
+</div>
+
 </div>
 
 </div>
